@@ -5,6 +5,7 @@
 .listNews {
     display: grid;
     grid-template-columns: 50px 200px 200px 200px 150px;
+    overflow: hidden;
 }
 
 .itemNews {
@@ -33,14 +34,83 @@
 }
 
 .boxFormNews {
-    margin-bottom: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 67%;
+    margin-bottom: 29px;
+}
+
+.formNews {
+    margin-right: 31px;
 }
 
 .itemField {
+    display: flex;
+    align-items: center;
     margin-bottom: 15px;
 }
 
 .itemField label {
     font-size: 16px;
     font-weight: 600;
+}
+
+.itemField input {
+    display: block;
+    padding: 10px 7px;
+    padding-left: 11px;
+    margin-left: 13px;
+    min-width: 67px;
+    font-size: 16px;
+    border-radius: 3px;
+    border: 1px solid rgba(78, 59, 49, 0.5);
+    background-color: #fff;
+    outline: none;
+}
+
+.btnSubmitNews {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 7px;
+    padding: 12px 21px;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 13px;
+    background-color: rgba(105, 82, 84, 0.8);
+    color: #ece3e3;
+}
+
+.btnSubmitNews:hover,
+.btnSubmitNews:focus {
+    background-color: rgba(105, 82, 84, 0.5);
+}
+
+select {
+    width: 200px;
+    padding: 6px 10px;
+    height: 40px;
+    font-size: 14px;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background-color: #fff;
+    appearance: none;        
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+select:focus {
+    outline: none;
+    border-color: #999;
+}
+
+
+select {
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg fill='gray' height='20' viewBox='0 0 24 24' width='20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 8px center;
+    background-size: 16px;
+    padding-right: 30px; 
 }

@@ -9,7 +9,7 @@
                     <label  class='labelSearch'
                             for='search'        
                     >
-                        Введите имя:
+                        Поиск по имени:
                     </label>
 
                     <input  name="search"
@@ -35,6 +35,12 @@
                     />
                 </li>
             </ul>
+            
+            <button type="submit"
+                    class="btnSubmitNews"
+            >
+                Отправить
+            </button>
         </form>
 
         <div class="boxSelect">
@@ -42,14 +48,14 @@
                     class="selectPeriod"
                     value="all"
             >
-                <option value="all">
-                    
+                <option value="all" selected>
+                    за все время
                 </option>
                 <option value="month">
-                    this month
+                    за этот месяц
                 </option>
                 <option value="week">
-                    this week
+                    за эту неделю
                 </option>
             </select>
         </div>
@@ -88,3 +94,9 @@
         <?php endforeach; ?>
     </ul>
 </div>
+
+<script>
+    BX.message({
+        NEWS_LIST_AJAX: '<?=$this->__component->getPath()?>/ajax.php'
+    });
+</script>
