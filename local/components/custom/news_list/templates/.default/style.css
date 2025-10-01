@@ -1,0 +1,46 @@
+.headingListNews {
+    margin-bottom: 17px;
+}
+
+.listNews {
+    display: grid;
+    grid-template-columns: 50px 200px 200px 200px 150px;
+}
+
+.itemNews {
+  display: contents; /* чтобы li не ломал сетку */
+}
+
+.itemNews > span {
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  text-align: center;
+  font-weight: 500;
+  background-color: #fff;
+}
+
+.itemNews.header > span {
+  font-weight: bold;
+  color: #fff;
+  /* background: #f0f0f0; */
+  background-color: rgb(77, 60, 61);
+}
+
+/* styles for form */
+.listFields {
+    display: flex;
+    flex-direction: column;
+}
+
+.boxFormNews {
+    margin-bottom: 24px;
+}
+
+.itemField {
+    margin-bottom: 15px;
+}
+
+.itemField label {
+    font-size: 16px;
+    font-weight: 600;
+}

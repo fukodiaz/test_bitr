@@ -6,7 +6,7 @@ body {
     line-height: 24px;
 	font-weight: 400;
 	color: #484848;
-	background:#fff;
+	background:#f2f2f2;
 	overflow-x:hidden;
  }
 
@@ -57,9 +57,19 @@ button {
 }
 
 .mainWrapper {
-    max-width: 1920px;
+    max-width: 1200px;
     margin: 0 auto;
-
-	background-color: red;
+	background-color: #fcfcee;
 	height: 100vh;
+}
+
+.mainBox {
+	margin: 0 47px;
+}
+
+.headingMain {
+	margin-bottom: 17px;
+	padding-top: 27px;
+	font-size: 27px;
+
 }

@@ -26,10 +26,12 @@ if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();
 <body>
 	<div id="panel">
 		<?php 
-			$APPLICATION->ShowPanel();
+			// $APPLICATION->ShowPanel();
 		?>
 	</div>
     
 	<div class="mainWrapper">
         <main class="mainBox">
-            <p>header...</p>
+            <h1  class="headingMain">
+				Тестовое
+			</h1>
